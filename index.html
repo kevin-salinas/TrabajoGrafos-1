@@ -8,34 +8,69 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/b097035380.js" crossorigin="anonymous"></script>
     <title>Trabajo Grafos</title>
   </head>
   <body>
-    <div class="container">
-        <div class="row bg-warning my-2 rounded">
-            <div class="col-lg-4 col-md-12">
-                <form action="">
-                    <div class="form-group">
-                        <label for="" class="">Ingrese el tipo de grafo</label>
-                        <select class="form-control" id="tipoGrafo">
-                            <option>Grafo Simple</option>
-                            <option>Grafo Dirigido</option>
-                            <option>Grafo Etiquetado</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="">Ingrese numero de vertices</label>
-                        <input type="text" class="form-control" placeholder="Ingresa un numero" id="numVertices">
-                    </div>
-                    <div class="row d-flex justify-content-center form-group">
-                        <button class="btn btn-primary" id="Listo">Listo</button>
-                    </div><hr>
-                    <ul class="col" id="lista"></ul>
-                    <hr>
-                </form>
+      <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <div class="row">
+                <a href="#"><img src="img/logo.svg" width="35" height="35"></a>
+                <a href="#" class="navbar-brand text-dark mx-3">Trabajo Grafos</a>
+            </div>
+            <button class="navbar-toggler border border-light shadow" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu">
+                <span class="material-icons text-white">-</span>
+              </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <div class="row">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark mx-2">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark mx-2">Grafos</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a href="#" class="nav-link text-dark mx-2">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <!--  
+    <nav class="navbar navbar-expand-lg fixed-top bg-danger ">
+        <div class="container">
+          <div class="row big_animate">
+            <a href="index.html"><img src="img/logo1.png" alt="" width="35" height="35"></a>
+            <a href="index.html" class="navbar-brand text-white mx-3" id="title-font">Fiesta Kids</a>
+          </div>
+          <button class="navbar-toggler border border-light shadow" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu">
+            <span class="material-icons text-white">menu</span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbar">
+            <div class="row">
+              <ul class="navbar-nav ">
+                <li class="nav-item" id="nav_leo">
+                  <a href="index.html" class="nav-link text-white d-flex mx-2"><span class="material-icons mx-1">house</span>Inicio</a>
+                </li>
+                <li class="nav-item" id="nav_leo">
+                  <a href="servicios.html" class="nav-link text-white d-flex mx-2"><span class="material-icons mx-1">toys</span> Servicios</a>
+                </li>
+                <li class="nav-item" id="nav_leo">
+                  <a href="nosotros.html" class="nav-link text-white d-flex mx-2"><span class="material-icons mx-1">face</span> Nosotros</a>
+                </li>
+                <li class="nav-item" id="nav_leo">
+                  <a href="contacto.html" class="nav-link text-white d-flex mx-2"><span class="material-icons mx-1">mail_outline</span> Contáctanos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      -->
 
     <!-- Optional JavaScript -->
     <script type="text/javascript" src="js/grafos.js"></script>

@@ -1,0 +1,8 @@
+:root{
+    --blueAntartic: #2C3D63;
+    --greenBrook:#ADDCCA;
+    --redGrap: #FF6F5E;
+}
+nav{
+    background-color: var(--greenBrook);
+}
