@@ -19,7 +19,7 @@
                 <a href="#"><img src="img/logo.svg" width="35" height="35"></a>
                 <a href="#" class="navbar-brand text-dark mx-3">Trabajo Grafos</a>
             </div>
-            <button class="navbar-toggler border border-light shadow" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu">
+            <button class="navbar-toggler border border-light shadow-sm" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu">
                 <span class="material-icons text-white">-</span>
               </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbar">
@@ -38,39 +38,35 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav><br><br><br>
 
-    <!--  
-    <nav class="navbar navbar-expand-lg fixed-top bg-danger ">
-        <div class="container">
-          <div class="row big_animate">
-            <a href="index.html"><img src="img/logo1.png" alt="" width="35" height="35"></a>
-            <a href="index.html" class="navbar-brand text-white mx-3" id="title-font">Fiesta Kids</a>
-          </div>
-          <button class="navbar-toggler border border-light shadow" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu">
-            <span class="material-icons text-white">menu</span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbar">
-            <div class="row">
-              <ul class="navbar-nav ">
-                <li class="nav-item" id="nav_leo">
-                  <a href="index.html" class="nav-link text-white d-flex mx-2"><span class="material-icons mx-1">house</span>Inicio</a>
-                </li>
-                <li class="nav-item" id="nav_leo">
-                  <a href="servicios.html" class="nav-link text-white d-flex mx-2"><span class="material-icons mx-1">toys</span> Servicios</a>
-                </li>
-                <li class="nav-item" id="nav_leo">
-                  <a href="nosotros.html" class="nav-link text-white d-flex mx-2"><span class="material-icons mx-1">face</span> Nosotros</a>
-                </li>
-                <li class="nav-item" id="nav_leo">
-                  <a href="contacto.html" class="nav-link text-white d-flex mx-2"><span class="material-icons mx-1">mail_outline</span> Contáctanos</a>
-                </li>
-              </ul>
+    <!-- CUERPO -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="row my-2">
+                    <div class="my-2 mx-auto">Tipo de Grafo</div>
+                    <div class="btn-group mx-auto" role="group">
+                        <button class="btn btn-primary" type="button">Simple</button>
+                        <button class="btn btn-primary" type="button">Dirigido</button>
+                        <button class="btn btn-primary" type="button">Etiquetado</button>
+                    </div>
+                </div><hr>
+                <div action="" class="row form-group">
+                    <div class="col-8"><label for="" class="pt-2 ml-3">N° Vertices</label></div>
+                    <div class="col-4"><input type="number" class="form-control" placeholder="8" min="1"></div>
+                </div><hr>
+                <div class="col">
+                    <div class="mb-2">Aristas</div>
+                    <textarea name="aristas" id="aristas" cols="30" rows="5" class="form-control" 
+                    placeholder=""></textarea>
+                </div>
+                <div class="row d-flex justify-content-center mt-3">
+                    <div class="btn btn-primary" id="btnCrear">Crear Grafo</div>
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
-      -->
+    </div>
 
     <!-- Optional JavaScript -->
     <script type="text/javascript" src="js/grafos.js"></script>
