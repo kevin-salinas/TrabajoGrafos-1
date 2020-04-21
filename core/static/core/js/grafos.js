@@ -19,7 +19,7 @@ function totalArista(e){
         input.className="form-control mx-2";
         input.id=`vertice_e${i}`;
         // input.setAttribute("type","number");
-        input.setAttribute("placeholder","n°");
+        input.setAttribute("placeholder","ej: 2 5");
         // input.setAttribute("min","1");
         div1.appendChild(label);
         div2.appendChild(input);
