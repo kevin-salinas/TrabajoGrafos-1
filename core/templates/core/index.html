@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+
+    {% load static%}
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="{% static 'core/css/styles.css'%}">
     <script src="https://kit.fontawesome.com/b097035380.js" crossorigin="anonymous"></script>
     <title>Trabajo Grafos</title>
   </head>
@@ -16,7 +20,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <div class="row">
-                <a href="#"><img src="img/logo.svg" width="35" height="35"></a>
+                <a href="#"><img src="{% static 'core/img/logo.svg'%}" width="35" height="35"></a>
                 <a href="#" class="navbar-brand text-dark mx-3">Trabajo Grafos</a>
             </div>
             <button class="navbar-toggler border border-light shadow-sm" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu">
@@ -43,33 +47,40 @@
     <!-- CUERPO -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-sm-12">
-                <div class="row my-2">
-                    <div class="my-2 mx-auto">Tipo de Grafo</div>
-                    <div class="btn-group mx-auto" role="group">
-                        <button class="btn btn-primary" type="button">Simple</button>
-                        <button class="btn btn-primary" type="button">Dirigido</button>
-                        <button class="btn btn-primary" type="button">Etiquetado</button>
-                    </div>
-                </div><hr>
-                <div action="" class="row form-group">
-                    <div class="col-8"><label for="" class="pt-2 ml-3">N° Vertices</label></div>
-                    <div class="col-4"><input type="number" class="form-control" placeholder="8" min="1"></div>
-                </div><hr>
-                <div class="col">
-                    <div class="mb-2">Aristas</div>
-                    <textarea name="aristas" id="aristas" cols="30" rows="5" class="form-control" 
-                    placeholder=""></textarea>
+            <!-- formulario para ingresar un grafo (v,a) -->
+            <div class="col-lg-4 col-md-12 ">
+                <div class="row my-2 d-flex justify-content-around">
+                    <div class="">Tipo de Grafo</div>
+                     <select class="custom-select mx-2 my-2" id="tipoGrafo" aria-placeholder="leo">
+                          <option selected>Selecciona un Grafo</option>
+                          <option value="Simple">Simple</option>
+                          <option value="Dirigido">Dirigido</option>
+                          <option value="Etiquetado">Etiquetado</option>
+                    </select>
                 </div>
-                <div class="row d-flex justify-content-center mt-3">
-                    <div class="btn btn-primary" id="btnCrear">Crear Grafo</div>
+                <div class="row my-2">
+                    <div class="col-8"><label class="pt-2">N° Vertices</label></div>
+                    <div class="col-4"><input type="number" class="form-control mx-2" id="vertices" placeholder="n°" min="1"></div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-8"><label class="pt-2">N° Aristas</label></div>
+                    <div class="col-4"><input type="number" class="form-control mx-2" id="arista" placeholder="n°" min="1"></div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <button class="btn btn-primary" id="inputArista">Ingresar Aristas</button>
+                </div>
+                <div class="row my-2" id="nArista"></div><hr>
+                <div class="row d-flex justify-content-center">
+                    <button class="btn btn-primary" id="inputGrafo">Ingresar Grafo</button>
                 </div>
             </div>
         </div>
     </div>
+    
+                    
 
     <!-- Optional JavaScript -->
-    <script type="text/javascript" src="js/grafos.js"></script>
+    <script type="text/javascript" src="{% static 'core/js/grafos.js'%}"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
