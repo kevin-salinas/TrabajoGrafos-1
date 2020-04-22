@@ -2,5 +2,8 @@ from django.shortcuts import render , HttpResponse
 
 # Create your views here.
 
-def index(request):
-    return render(request,"core/index.html")
+def home(request):
+    return render(request,"core/home.html")
+
+def grafos(request):
+    return render(request,"core/grafos.html")
